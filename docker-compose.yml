@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    container_name: app
+    container_id: af9ea34c4697
     restart: always
     build: .
     ports:
@@ -10,7 +10,7 @@ services:
       - mongo
   mongo:
     container_name: convergentes
-    image: convergentes
+    image: nodejs
     volumes:
       - ./data:/data/db
     ports:

@@ -1,9 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const product = require('./routes/product.route'); // Imports routes for the products
-// Set up mongoose connection
+const product = require('./routes/product.route');
 const mongoose = require('mongoose');
-// initialize our express app
 const app = express();
 
 let dev_db_url = 'mongodb://Hudson:adm9210@ds233212.mlab.com:33212/productproject';

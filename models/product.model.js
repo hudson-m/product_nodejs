@@ -7,5 +7,5 @@ let ProductSchema = new Schema({
 });
 
 
-// Export the model
+// Exportar
 module.exports = mongoose.model('Product', ProductSchema);
